@@ -4,7 +4,9 @@ import model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CarDaoImpl implements CarDao {
     private List<Car> cars;
 
