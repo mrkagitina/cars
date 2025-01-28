@@ -1,9 +1,9 @@
 package web.service;
 
 import model.Car;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import web.dao.CarDao;
-import web.dao.CarDaoImpl;
 
 import java.util.List;
 
