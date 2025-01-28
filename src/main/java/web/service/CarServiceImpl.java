@@ -7,7 +7,7 @@ import web.dao.CarDaoImpl;
 
 import java.util.List;
 
-@Component
+@Service
 public class CarServiceImpl implements CarService {
     CarDao carDao = new CarDaoImpl();
 
