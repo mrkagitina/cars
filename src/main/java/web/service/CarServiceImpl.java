@@ -9,7 +9,12 @@ import java.util.List;
 
 @Service
 public class CarServiceImpl implements CarService {
-    CarDao carDao = new CarDaoImpl();
+    private CarDao carDao ;
+
+    @Autowired
+    public CarServiceImpl(CarDao carDao) {
+        this.carDao = carDao;
+    }
 
     public List<Car> listOfCars(Integer count){
         return carDao.listOfCars(count);
