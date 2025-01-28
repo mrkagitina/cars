@@ -12,10 +12,10 @@ import web.service.CarServiceImpl;
 @Controller
 public class CarController {
 
-    private final CarServiceImpl carService;
+    private final CarService carService;
 
     @Autowired
-    public CarController(CarServiceImpl carService) {
+    public CarController(CarService carService) {
         this.carService = carService;
     }
 
